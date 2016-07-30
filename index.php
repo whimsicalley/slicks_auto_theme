@@ -24,6 +24,6 @@
                 <!-- End Loop -->
             </div>
         </section>
-    <!-- End Section Container -->
+    <!-- End "Section" Row Container (not actual container) -->
 
 <?php get_footer(); ?>

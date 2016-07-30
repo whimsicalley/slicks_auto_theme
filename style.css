@@ -13,17 +13,21 @@ Text Domain: slicks_auto_theme
 
 * {
     color: #000000;
-    font-size: 14px;
     line-height: 16px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-      color: #999999;
-      font-weight: 700;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #999999;
+    font-weight: 700;
 }
 
-h1 {
-    font-size: 3.0rem;
+h1 a {
+    color: black;
 }
 
 h2 {
@@ -43,33 +47,64 @@ h5 {
 }
 
 a {
-    color: red;
+    color: green;
     text-decoration: none;
 }
 
-/*--- Menu --- */
+/*--- HEADER --- */
+
+header {
+    background-color: eaeaea;
+    padding: 10px 40px;
+}
+
+.header-left {
+
+}
+
+.header-right {
+    font-family: "Ubuntu", sans-serif;
+}
+
+/********** MENU / NAV *********/
+
+nav {
+    background-color: #e50000;
+}
 
 .blank-menu-header {
     text-align: left;
-    margin-top: 40px;
+    margin: 40px;
 }
+
 .blank-menu-header ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
     list-style-image: none;
 }
+
 .blank-menu-header li {
     display: inline;
 }
+
 .blank-menu-header ul li a {
     text-decoration:none;
     margin: 4px;
     padding: 5px 0px 5px 40px;
+    font-family: "Ubuntu", sans-serif;
     font-weight: 300;
-    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: #ffffff;
 }
+
 .blank-menu-header ul li a:hover {
     color: #cccccc;
 }
-/* -- End Menu -- */
+
+/********* FOOTER *********/
+
+footer {
+    background-color: #e50000;
+    margin-bottom: 30px;
+}
