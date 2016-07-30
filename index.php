@@ -1,11 +1,13 @@
 <?php get_header(); ?>
 
-    <!-- Begin Section Container -->
+    <!-- Begin Skeleton Container -->
         <section class="row">
             <div class="twelve columns">
-                
+                <!-- Begin Image Slider -->
+                <?php echo do_shortcode( '[URIS id=25]' ); ?>
+                <!-- End Image Slider -->
             </div>
         </section>
-    <!-- End "Section" Row Container (not actual container) -->
+    <!-- End Skeleton Container (not overall container) -->
 
 <?php get_footer(); ?>

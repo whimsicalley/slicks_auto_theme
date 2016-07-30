@@ -1,3 +1,8 @@
+<?php /*
+Template Name: Blog Template
+*/
+?>
+
 <?php get_header(); ?>
 
     <!-- Begin Section Container -->

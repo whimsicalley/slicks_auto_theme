@@ -18,6 +18,7 @@ Text Domain: slicks_auto_theme
 
 body {
     margin: 0 auto;
+    background-color: #eaeaea;
 }
 
 h1,
@@ -64,7 +65,7 @@ a {
 }
 
 header {
-    background-color: eaeaea;
+    background-color: #eaeaea;
     padding: 10px 40px;
 }
 
@@ -116,6 +117,14 @@ nav {
 
 .blank-menu-header ul li a:hover {
     color: #cccccc;
+}
+
+/********* MAIN CONTENT *********/
+
+.container {
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 /********* FOOTER *********/
