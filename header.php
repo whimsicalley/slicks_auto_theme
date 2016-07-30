@@ -18,8 +18,8 @@
                 </div>
                 <div class="three columns header-right">
                     <p>1234 Slick's Place<br />
-                    Mays Landing, NJ<br /> 08330<br />
-                    (609)555-9876</p>
+                    Mays Landing, NJ 08330<br />
+                    (609) 555 - 9876</p>
                 </div>
             </div>
         </div>
