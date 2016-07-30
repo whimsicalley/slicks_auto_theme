@@ -51,7 +51,13 @@ a {
     text-decoration: none;
 }
 
-/*--- HEADER --- */
+/********* HEADER *********/
+
+.header-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
 
 header {
     background-color: eaeaea;
@@ -107,4 +113,10 @@ nav {
 footer {
     background-color: #e50000;
     margin-bottom: 30px;
+}
+
+#footer-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
 }
