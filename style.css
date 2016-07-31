@@ -19,6 +19,7 @@ Text Domain: slicks_auto_theme
 body {
     margin: 0 auto;
     background-color: #eaeaea;
+    font-family: "Ubuntu", sans-serif;
 }
 
 h1,
@@ -36,31 +37,34 @@ h1 a {
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 3em;
+    letter-spacing: 1px;
 }
 
 h3 {
-    font-size: 2.0rem;
+    font-size: 2.0em;
 }
 
 h4 {
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 
 h5 {
-    font-size: 1.2rem;
+    font-size: 1.2em;
+}
+
+p {
+    line-height: 26px;
 }
 
 a {
-    color: green;
-    text-decoration: none;
+    color: blue;
 }
 
 /********* HEADER *********/
 
 .header-container {
     max-width: 1200px;
-    width: 100%;
     margin: auto;
 }
 
@@ -108,7 +112,7 @@ nav {
 .blank-menu-header ul li a {
     text-decoration:none;
     margin: 4px;
-    padding: 5px 0px 5px 40px;
+    padding: 5px 50px 5px 0;
     font-family: "Ubuntu", sans-serif;
     text-transform: uppercase;
     color: #ffffff;
@@ -127,11 +131,82 @@ nav {
     padding-bottom: 15px;
 }
 
+.main-promos,
+.welcome-msg {
+    margin-top: 15px;
+}
+
+main h3 {
+    text-align: center;
+}
+
+.welcome-msg {
+    padding: 15px;
+}
+
+button {
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+    float: right;
+}
+
+button:hover {
+    border: 1px solid white;
+}
+
+#side-pic1 {
+    background: url("img/side-pic1.jpg");
+    width: 300px;
+    height: 180px;
+    text-shadow: 5px 5px 8px #000000;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+
+#side-pic2 {
+    margin-top: 10px;
+    background: url("img/side-pic2.jpeg");
+    width: 300px;
+    height: 180px;
+    text-shadow: 5px 5px 8px #000000;
+    border: 1px solid black;
+}
+
+#side-pic3 {
+    margin-top: 10px;
+    background: url("img/side-pic3.jpg");
+    width: 300px;
+    height: 180px;
+    text-shadow: 5px 5px 8px #000000;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.side-headings {
+    padding-top: 70px;
+    letter-spacing: 2px;
+}
+
+.side-headings a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.side-headings a:hover {
+    color: #eaeaea;
+}
+
+.testimonial {
+    font-style: italic;
+}
+
 /********* FOOTER *********/
 
 footer {
     background-color: #e50000;
-    margin-bottom: 30px;
     width: 100%;
 }
 
