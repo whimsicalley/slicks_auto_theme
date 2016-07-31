@@ -4,13 +4,13 @@
 function blank_widgets_init() {
     /*-- Sidebar Widget --*/
     register_sidebar( array(
-        'name' => ('First Widget'),
-        'id' => 'first-widget',
-        'description' => 'Widget for our sidebar on pages',
-        'before_widget' => '<div class="widget-sidebar">',
+        'name' => ('Blog Sidebar Widget'),
+        'id' => 'blog-widget',
+        'description' => 'Widget for our sidebar on the blog pages',
+        'before_widget' => '<div class="blog-widget-sidebar">',
         'after_widget' => '</div>',
-        'before_title' => '<h2>',
-        'after_title' => '</h2>'
+        'before_title' => '<h4>',
+        'after_title' => '</h4>'
     ));
     /*--First Footer Widget--*/
     register_sidebar( array(
@@ -54,5 +54,10 @@ add_theme_support('menus');
 /*--- Enable Post Thumbnails ---*/
 add_theme_support( 'post-thumbnails' );
 
+/*---Change excerpt length---*/
+function new_excerpt_length($length) {
+    return 30;
+}
+add_filter('excerpt_length', 'new_excerpt_length');
 
 ?>
