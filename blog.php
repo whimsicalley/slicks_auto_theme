@@ -15,15 +15,19 @@
                         the_post(); ?>
                             <!--Start Individual Post Column-->
                             <div class="six columns post">
-                                <?php if ( has_post_thumbnail() ) {
-                                    the_post_thumbnail('thumbnail');
-                                } ?>
                                 <div class="time">
                                     <?php the_time('F dS, Y'); ?>
                                 </div>
+                                <div class="post-thumbnail">
+                                    <?php if ( has_post_thumbnail() ) {
+                                    the_post_thumbnail('thumbnail');
+                                    } ?>
+                                </div>
                                 <h3 class="post-header">
-                                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></h3></a>
+                                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></h3></a>
+                                <div class="excerpt">
                                     <?php the_excerpt(); ?>
+                                </div>
                             </div>
                             <!--End Post Column-->
                             <?php
@@ -37,6 +41,7 @@
         </div>
         <!--Sidebar area-->
         <div class="four columns" id="blog-widget">
+            <h3>A Slick Blog</h3>
             <?php dynamic_sidebar('blog-widget'); ?>
         </div>
     </div>
