@@ -2,7 +2,7 @@
 
 <!-- Begin Section Container -->
     <section class="row">
-        <div class="eight columns">
+        <div class="eight columns common-page">
             <!-- Begin Loop -->
             <?php
             if ( have_posts() ) {
@@ -17,8 +17,9 @@
             <!-- End Loop -->
         </div>
 
-        <div class="four columns">
-          <?php get_sidebar(); ?>
+        <div class="four columns" id="about-widget-sidebar">
+            <h3>Get In Touch</h3>
+            <?php dynamic_sidebar('about-widget-sidebar'); ?>
         </div>
 
     </section>

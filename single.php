@@ -2,7 +2,7 @@
 
 <!-- Begin Section Container -->
     <section class="row">
-        <div class="twelve columns">
+        <div class="twelve columns opened-post-page">
             <!-- Begin Loop -->
             <?php
             if ( have_posts() ) {
@@ -22,6 +22,11 @@
             }
             ?>
             <!-- End Loop -->
+            <div class="post-nav">
+                <?php previous_post_link(); ?>  |  
+                <?php next_post_link(); ?>
+            </div>
+            </div>
         </div>
     </section>
 <!-- End Section Container -->

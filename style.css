@@ -11,6 +11,11 @@ Text Domain: slicks_auto_theme
 @import url("stylesheets/normalize.css");
 @import url("stylesheets/skeleton.css");
 
+@font-face {
+    font-family: RuggedRide;
+    src: url("fonts/rugged-ride.ttf");
+}
+
 * {
     color: #000000;
     line-height: 16px;
@@ -22,7 +27,6 @@ body {
     font-family: "Ubuntu", sans-serif;
 }
 
-h1,
 h2,
 h3,
 h4,
@@ -30,16 +34,6 @@ h5,
 h6 {
     color: #ffffff;
     font-weight: 700;
-}
-
-h1 a {
-    color: black;
-    font-size: 1.7em;
-}
-
-h1 a:hover {
-    text-decoration: none;
-    color: #333333;
 }
 
 h2 {
@@ -76,8 +70,9 @@ a:hover {
 /********* HEADER *********/
 
 .header-container {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: auto;
+    padding-left: 50px;
 }
 
 header {
@@ -85,13 +80,26 @@ header {
     padding: 10px 40px;
 }
 
+header h1 a {
+    font-family: RuggedRide;
+    font-weight: 300;
+    color: black;
+    font-size: 1.8em;
+    margin-bottom: 0;
+}
+
+h1 a:hover {
+    text-decoration: none;
+    color: #333333;
+}
+
 .header-left {
-    padding: 70px 0 10px 40px;
+    padding: 90px 0 10px 40px;
 }
 
 .header-right {
     font-family: "Ubuntu", sans-serif;
-    padding: 30px 0 10px 0;
+    padding: 30px 0 10px 20px;
     font-size: 1.2em;
 }
 
@@ -192,8 +200,24 @@ nav {
     font-weight: 500;
 }
 
-main h2 {
+/* Used as main styling agent on 404, search results page, full-width page */
+.common-page, .opened-post-page {
+    padding: 30px;
+}
+
+main h2,
+.common-page h2,
+.opened-post-page h2 {
     color: #000000;
+}
+
+.opened-post-page h2 {
+    padding-top: 40px;
+}
+
+.post-nav {
+    text-align: center;
+    font-size: 1.5em;
 }
 
 main h3 {
@@ -421,7 +445,6 @@ h4 {
 }
 
 .form5 .wdform_page {
-    font-family: "Ubuntu", sans-serif;
     max-width: 570px;
 }
 

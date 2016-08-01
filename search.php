@@ -3,7 +3,7 @@
 get_header(); ?>
 
 <div class="row">
-    <div class="eight columns">
+    <div class="eight columns common-page">
         <?php if( have_posts() ) :?>
             <h1><?php printf(
             __('Search Results for: %s'),
@@ -15,12 +15,13 @@ get_header(); ?>
             <?php the_content();
         endwhile;
         else : ?>
-            <h1>Nothing Found</h1>
+            <h2>Nothing Found</h2>
             <p>Sorry, but nothing matched your search criteria. Please try again with different search terms.</p>
         <?php endif; ?>
     </div>
-    <div class="four columns">
-        <?php get_sidebar(); ?>
+    <div class="four columns" id="about-widget-sidebar">
+        <h3>Get In Touch</h3>
+        <?php dynamic_sidebar('about-widget-sidebar'); ?>
     </div>
 </div>
 
