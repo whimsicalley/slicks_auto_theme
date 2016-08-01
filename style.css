@@ -84,8 +84,24 @@ header h1 a {
     font-family: RuggedRide;
     font-weight: 300;
     color: black;
-    font-size: 1.8em;
+    font-size: 2em;
     margin-bottom: 0;
+    line-height: 0.8em;
+}
+
+@media all and (min-width: 980px) {
+    header h1 a {
+        margin-top: 0;
+        font-size: 2.6em;
+    }
+}
+
+@media all and (min-width: 1209px) {
+    header h1 a {
+        font-size: 1.8em;
+        line-height: 0;
+        margin-bottom: 0;
+    }
 }
 
 h1 a:hover {
@@ -94,13 +110,57 @@ h1 a:hover {
 }
 
 .header-left {
-    padding: 90px 0 10px 40px;
+    padding-top: 20px;
+}
+
+@media all and (min-width: 791px) {
+    .header-left {
+        padding: 45px 0 10px 40px;
+    }
+}
+
+@media all and (min-width: 1208px) {
+    .header-left {
+        padding: 90px 0 10px 40px;
+    }
 }
 
 .header-right {
     font-family: "Ubuntu", sans-serif;
-    padding: 30px 0 10px 20px;
+    padding: 0px
     font-size: 1.2em;
+    margin-top: 0;
+}
+
+@media all and (min-width: 300px) {
+    .header-right {
+        margin-top: 15px;
+    }
+}
+
+@media all and (min-width: 550px) {
+    .header-right {
+        margin-top: 75px;
+    }
+}
+
+@media all and (min-width: 850px) {
+    .header-right {
+        margin-top: 50px;
+    }
+}
+
+@media all and (min-width: 980px) {
+    .header-right {
+        margin-top: 75px;
+    }
+}
+
+@media all and (min-width: 1209px) {
+    .header-right {
+        margin-top: 50px;
+        margin-left: 20px;
+    }
 }
 
 .header-right p {
@@ -136,7 +196,7 @@ nav {
 
 .blank-menu-header {
     text-align: left;
-    margin: 20px 0 20px 175px;
+    margin: 30px 0 20px 65px;
 }
 
 .blank-menu-header ul {
@@ -147,8 +207,16 @@ nav {
 }
 
 .blank-menu-header li {
-    display: inline;
-    line-height: 5;
+    display: block;
+    line-height: 3;
+    text-align: center;
+}
+
+@media all and (min-width: 1038px) {
+    .blank-menu-header li {
+        display: inline;
+        line-height: 5;
+    }
 }
 
 .blank-menu-header ul li a {
@@ -243,7 +311,7 @@ button:hover {
 
 #side-pic1 {
     background: url("img/side-pic1.jpg");
-    width: 300px;
+    max-width: 300px;
     height: 180px;
     text-shadow: 5px 5px 8px #000000;
     border:1px black solid;
@@ -252,7 +320,7 @@ button:hover {
 #side-pic2 {
     margin-top: 10px;
     background: url("img/side-pic2.jpeg");
-    width: 300px;
+    max-width: 300px;
     height: 180px;
     text-shadow: 5px 5px 8px #000000;
     border: 1px solid black;
@@ -261,7 +329,7 @@ button:hover {
 #side-pic3 {
     margin-top: 10px;
     background: url("img/side-pic3.jpg");
-    width: 300px;
+    max-width: 300px;
     height: 180px;
     text-shadow: 5px 5px 8px #000000;
     border: 1px solid black;
@@ -300,7 +368,7 @@ button:hover {
     opacity: 0.85;
     padding: 10px;
     border-radius: 15px;
-    height: 200px;
+    min-height: 200px;
     border: 3px solid red;
     margin-left: 2%;
 }
