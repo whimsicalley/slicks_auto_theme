@@ -2,11 +2,14 @@
         <footer>
             <div id="footer-container">
                 <div class="row">
-                    <div class="six columns">
+                    <div class="four columns">
                         <?php dynamic_sidebar('footer-one'); ?>
                     </div>
-                    <div class="six columns">
+                    <div class="four columns middle">
                         <?php dynamic_sidebar('footer-two'); ?>
+                    </div>
+                    <div class="four columns">
+                        <?php dynamic_sidebar('footer-three'); ?>
                     </div>
                 </div>
             </div>

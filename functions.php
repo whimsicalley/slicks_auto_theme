@@ -2,7 +2,7 @@
 /*-------------- Enable Widgets--------------- */
 
 function blank_widgets_init() {
-    /*-- Sidebar Widget --*/
+    /*-- Blog Sidebar Widget --*/
     register_sidebar( array(
         'name' => ('Blog Sidebar Widget'),
         'id' => 'blog-widget',
@@ -11,6 +11,36 @@ function blank_widgets_init() {
         'after_widget' => '</div>',
         'before_title' => '<h4>',
         'after_title' => '</h4>'
+    ));
+    /*-- About Sidebar Widget --*/
+    register_sidebar( array(
+        'name' => ('About Sidebar Widget'),
+        'id' => 'about-widget-sidebar',
+        'description' => 'Widget for our sidebar on the about page',
+        'before_widget' => '<div class="about-widget-sidebar">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4>',
+        'after_title' => '</h4>'
+    ));
+    /*-- About Widget --*/
+    register_sidebar( array(
+        'name' => ('About Widget'),
+        'id' => 'about-widget',
+        'description' => 'Widget content of the about page',
+        'before_widget' => '<div class="about-widget">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+    /*-- Promos Widget --*/
+    register_sidebar( array(
+        'name' => ('Promos Widget'),
+        'id' => 'promos-widget',
+        'description' => 'Widget content of the promotions page',
+        'before_widget' => '<div class="promos-widget">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
     ));
     /*--First Footer Widget--*/
     register_sidebar( array(
